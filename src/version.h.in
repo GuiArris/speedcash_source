@@ -1,11 +1,11 @@
 #define STR_HELPER(x) #x
 #define STR(x) STR_HELPER(x)
 
-#define PROJECT_NAME "scashcoin"
-#define PROJECT_SITE "http://scashcoin.com"
-#define PROJECT_COPYRIGHT "Copyright 2020, The Scash Developers"
+#define PROJECT_NAME "speedcash"
+#define PROJECT_SITE "https://getspeedcash.org"
+#define PROJECT_COPYRIGHT "Copyright 2024, The SpeedCash Team"
 #define APP_VER_MAJOR 1
-#define APP_VER_MINOR 2
+#define APP_VER_MINOR 0
 #define APP_VER_REV 0
 #define APP_VER_BUILD 0
 
