@@ -94,7 +94,7 @@ bool Currency::generateGenesisBlock() {
   //std::string hex_tx_represent = Common::toHex(txb);
 
   // Hard code coinbase tx in genesis block, because through generating tx use random, but genesis should be always the same
-  std::string genesisCoinbaseTxHex = "010a01ff000180909be7fb820102dcdf508d4097256e28486a54ad4f6d74aa8b04f59eeccbe550230b9f4973f9a82101683f7bb9f84c2ca55be37497c49c1e6f1a9e696bf9f22900d1f1ce9210f4c2c7";
+  std::string genesisCoinbaseTxHex = "010a01ff000180e29fc4f2c4020213cf3303ee50b0eba8e32054bfb352a9fe7639cba0840e4b071b7e146c784f8421014b5aaf1f56bfdf19ffa4c75623d62ab39d8423d120baa6c506499c79b73bdf6f";
   BinaryArray minerTxBlob;
 
   bool r =
@@ -261,7 +261,7 @@ bool Currency::constructMinerTx(uint8_t blockMajorVersion, uint32_t height, size
 		outAmounts.insert(outAmounts.begin(), (feeReward));
 
     // Initialize Research address
-    std::string addressStr = "SdjyPyCjZudVW3bdrssrb9VxGrxaFLRkPKXmwcmBGPp4WiTiHVNYQexXhnbaokrpKWPooigQMSzPddnnVxuoWgFZ1mqAtu3mF";
+    std::string addressStr = "Sdj79JPw5zCJSwSFNi8obxbnmkYaWS9F1evfvyDaXnHnFjVZjKL5g1VfJEHobwSBn1hnmyBzEM4wVfLrsGaJjdpq25VDmPdHS";
     CryptoNote::AccountPublicAddress researchAddress;
     if(!(CryptoNote::Currency::parseAccountAddressString(addressStr, researchAddress))) {
         logger(ERROR, BRIGHT_RED) << "Could note get research public key";
